@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="NASA's Three Featured Galaxies">
+    <title>Three Galaxies, Infinite Wonders</title>
+    <!-- TODO: Add favicon image -->
+    <link rel="icon" type="image/x-icon" href="img/telescope-favicon.ico">
+    <style>
+        header,
+        main,
+        footer {
+            text-align: center;
+        }
+
+        /* Proper styling for the header image */
+        .header-container {
+            width: 100%;
+            max-width: 2000px;
+            height: 500px;
+            overflow: hidden;
+            /* Crops excess if necessary */
+            margin: 0 auto;
+        }
+
+        .header-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures no distortion */
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto 20px auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            line-height: 3rem;
+            letter-spacing: 0.5rem;
+        }
+
+        /* Multicolumn layout */
+        .activity-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .activity-col {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .activity-col img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            /* Ensures images maintain aspect ratio */
+            border-radius: 10px;
+            /* Optional: Adds rounded corners for styling */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Header image -->
+        <div class="header-container">
+            <img src="img/galaxyheader.jpg" alt="NASA Header Image">
+        </div>
+
+        <div class="container">
+            <h1>Three Galaxies, Infinite Wonders</h1>
+            <h2>Featuring NASA’s Breathtaking Cosmic Images</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="activity-row">
+            <article class="activity-col">
+                <!-- Added NGC 6744 Galaxy Image -->
+                <img src="img/galaxy-M31-original.jpg" alt="NGC 6744 Spiral Galaxy" width="300" height="300">
+                <h2>Spiral Galaxy NGC 6744</h2>
+                <p>
+                    Big, beautiful spiral galaxy <a href="https://apod.nasa.gov/apod/ap241101.html">NGC 6744</a> is
+                    nearly 175,000 light-years across, larger than our own Milky Way.
+                </p>
+            </article>
+            <article class="activity-col">
+                <!-- Added M102 Galaxy Image -->
+                <img src="img/galaxy-M102-original.jpg" alt="M102 Edge-On Galaxy" width="300" height="300">
+                <h2>M102: Edge-on Disk Galaxy</h2>
+                <p>
+                    What kind of celestial object is this? The <a
+                        href="https://apod.nasa.gov/apod/ap240306.html">M102</a>, a relatively normal galaxy -- but seen
+                    from its edge.
+                </p>
+            </article>
+            <article class="activity-col">
+                <!-- Added M31 Galaxy Image -->
+                <img src="img/galaxy-M31-original.jpg" alt="M31 Andromeda Galaxy" width="300" height="300">
+                <h2>M31: Andromeda</h2>
+                <p>
+                    The most distant object easily visible to the unaided eye is <a
+                        href="https://apod.nasa.gov/apod/ap240908.html">M31</a>, the great Andromeda Galaxy.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <img src="img/NASA-Logo.svg" alt="NASA Logo" width="100" height="85">
+    </footer>
+</body>
+
+</html>
